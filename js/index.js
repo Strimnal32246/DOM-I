@@ -134,3 +134,13 @@ document
 Array.from(document.querySelector("nav").getElementsByTagName("a")).forEach(
   link => (link.style.color = "green")
 );
+// ADD 2 NEW NAV ITEMS
+const navElement = document.querySelector("nav");
+const newElement1 = document.createElement("a");
+const newElement2 = document.createElement("a");
+
+navElement.appendChild(newElement1);
+navElement.appendChild(newElement2);
+
+newElement1.innerText = "Great Idea";
+newElement2.innerText = "New Services";
